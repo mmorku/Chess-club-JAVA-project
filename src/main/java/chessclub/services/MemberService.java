@@ -26,7 +26,7 @@ public class MemberService {
         return memberRepository.findAll();
     }
 
-    public Member getItemById(Long id) {
+    public Member getMemberById(Long id) {
         Optional<Member> member = memberRepository.findById(id);
 
         if (!member.isPresent()) {
