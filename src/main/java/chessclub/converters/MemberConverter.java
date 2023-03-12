@@ -1,6 +1,7 @@
 package src.main.java.chessclub.converters;
 
 import src.main.java.chessclub.dto.AddMemberDTO;
+import src.main.java.chessclub.dto.EditMemberDTO;
 import src.main.java.chessclub.dto.MemberDTO;
 import src.main.java.chessclub.entities.Member;
 
@@ -9,7 +10,18 @@ import java.util.List;
 
 public abstract class MemberConverter {
 
-
+    public static Member convertEditMemberDtoToEntity(EditMemberDTO memberDTO){
+        Member member = null;
+        if (memberDTO != null){
+            member = new Member();
+            member.setName(memberDTO.getName());
+            member.setLastName(memberDTO.getLastName());
+            member.setEmail(memberDTO.getEmail());
+            member.setPersonalCode(memberDTO.getPersonalCode());
+            member.setChessCareerStartDate(memberDTO.getChessCareerStartDate());
+        }
+        return member;
+    }
     public static Member convertAddMemberDtoToEntity(AddMemberDTO memberDTO){
         Member member = null;
         if (memberDTO != null){

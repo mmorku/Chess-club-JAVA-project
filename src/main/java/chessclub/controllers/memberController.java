@@ -36,6 +36,15 @@ public class memberController {
         return MemberConverter.convertMemberEntityToDto(this.memberService.getMemberById(id));
     }
 
+    @PatchMapping("/{id}")
+    public void editMemberById(@PathVariable Long id, @RequestBody AddMemberDTO memberDTO){
+        this.memberService.editMemberById(id, MemberConverter.convertAddMemberDtoToEntity(memberDTO));
+    }
+
+    @PutMapping("/{id}")
+    public void replaceMemberById(@PathVariable Long id, @RequestBody AddMemberDTO memberDTO){
+        this.memberService.replaceMemberById(id, MemberConverter.convertAddMemberDtoToEntity(memberDTO));
+    }
     @GetMapping("/{id}/name")
     public String getMemberNameById(@PathVariable Long id) {
         return this.memberService.getNameById(id);

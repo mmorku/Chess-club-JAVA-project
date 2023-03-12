@@ -26,6 +26,38 @@ public class MemberService {
         return memberRepository.findAll();
     }
 
+    public void replaceMemberById(Long id, Member member){
+        if (!memberRepository.existsById(id)) {
+            return;
+        }
+        member.setId(id);
+        this.memberRepository.saveAndFlush(member);
+    }
+
+    public void editMemberById(Long id, Member member){
+        Optional<Member> oldMemberOptional = memberRepository.findById(id);
+        if (!oldMemberOptional.isPresent()) {
+            return;
+        }
+        Member oldMember = oldMemberOptional.get();
+
+        if (member.getName() != null && !oldMember.getName().equals(member.getName())){
+            oldMember.setName(member.getName());
+        }
+        if (member.getLastName() != null && !oldMember.getLastName().equals(member.getLastName())){
+            oldMember.setLastName(member.getLastName());
+        }
+        if (member.getEmail() != null && !oldMember.getEmail().equals(member.getEmail())){
+            oldMember.setEmail(member.getEmail());
+        }
+        if (member.getPersonalCode() != null && !oldMember.getPersonalCode().equals(member.getPersonalCode())){
+            oldMember.setPersonalCode(member.getPersonalCode());
+        }
+        if (member.getChessCareerStartDate() != null && !oldMember.getChessCareerStartDate().equals(member.getChessCareerStartDate())){
+            oldMember.setChessCareerStartDate(member.getChessCareerStartDate());
+        }
+        memberRepository.saveAndFlush(oldMember);
+    }
     public Member getMemberById(Long id) {
         Optional<Member> member = memberRepository.findById(id);
 
