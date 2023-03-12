@@ -42,14 +42,11 @@ public abstract class MemberConverter {
             memberDTO.setLastName(member.getLastName());
             memberDTO.setEmail(member.getEmail());
             memberDTO.setSex(memberDTO.getSex());
+            memberDTO.setAge(memberDTO.getAge());
             memberDTO.setExperience(memberDTO.getExperience());
         }
         return memberDTO;
     }
-
-//    public static MemberDTO convertMemberEntitySex(Member member){
-//        Map<Boolean, List<MemberDTO>> response = member.getPersonalCode().intValue((Collectors.partitioningBy(n -> n % 2 == 0)));
-//    }
 
     public static List<MemberDTO> convertMemberEntityListToDto(List<Member> memberList){
         List<MemberDTO> memberDTOList = null;

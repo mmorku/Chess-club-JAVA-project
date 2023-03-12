@@ -15,5 +15,6 @@ public class MemberDTO {
     private String lastName;
     private String email;
     private String sex;
+    private String age;
     private String experience;
 }

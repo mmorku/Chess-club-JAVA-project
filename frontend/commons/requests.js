@@ -1,57 +1,57 @@
-const API_BASE_URL = "http://localhost:8080";
+const API_BASE_URL = "http://localhost:8082";
 
-export const getStudents = async () => {
-  const response = await fetch(`${API_BASE_URL}/student`);
-  const students = await response.json();
-  return students;
+export const getMembers = async () => {
+  const response = await fetch(`${API_BASE_URL}/member`);
+  const members = await response.json();
+  return members;
 };
 
-export const getStudentByID = async (studentId) => {
-  const response = await fetch(`${API_BASE_URL}/student/${studentId}`);
-  const student = await response.json();
-  return student;
+export const getMemberByID = async (memberId) => {
+  const response = await fetch(`${API_BASE_URL}/member/${memberId}`);
+  const member = await response.json();
+  return member;
 };
 
-export const saveStudent = async (student) => {
-  await fetch(`${API_BASE_URL}/student`, {
+export const saveMember = async (member) => {
+  await fetch(`${API_BASE_URL}/member`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(student),
+    body: JSON.stringify(member),
   });
 
-  alert("Student saved successfully!");
+  alert("Member saved successfully!");
 };
 
-export const putStudent = async (student, id) => {
-  await fetch(`${API_BASE_URL}/student/${id}`, {
+export const putMember = async (member, id) => {
+  await fetch(`${API_BASE_URL}/member/${id}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(student),
+    body: JSON.stringify(member),
   });
 
-  alert(`[Student ${id}] replaced successfully!`);
+  alert(`[Member ${id}] replaced successfully!`);
 };
 
-export const patchStudent = async (student, id) => {
-  await fetch(`${API_BASE_URL}/student/${id}`, {
+export const patchMember = async (member, id) => {
+  await fetch(`${API_BASE_URL}/member/${id}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(student),
+    body: JSON.stringify(member),
   });
 
-  alert(`[Student ${id}] updated successfully!`);
+  alert(`[Member ${id}] updated successfully!`);
 };
 
-export const deleteStudentById = async (studentId) => {
-  await fetch(`${API_BASE_URL}/student/${studentId}`, {
+export const deleteMemberById = async (memberId) => {
+  await fetch(`${API_BASE_URL}/member/${memberId}`, {
     method: "DELETE",
   });
 
-  alert(`[Student ${studentId}] deleted successfully`);
+  alert(`[Member ${memberId}] deleted successfully`);
 };

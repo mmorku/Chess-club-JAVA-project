@@ -118,10 +118,10 @@ public class MemberService {
             System.out.println(m);
         }
     }
-
-    public void deleteMemberByName(String name) {
-        this.memberRepository.deleteAllByName(name);
-    }
+//
+//    public void deleteMemberByName(String name) {
+//        this.memberRepository.deleteAllByName(name);
+//    }
 
     public void deleteMemberById(Long id) {
         this.memberRepository.deleteById(id);
