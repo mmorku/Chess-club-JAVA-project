@@ -14,7 +14,6 @@ public class MemberDTO {
     private String name;
     private String lastName;
     private String email;
-    private String sex;
-    private String age;
-    private String experience;
+    private String personalCode;
+    private LocalDate chessCareerStartDate;
 }

@@ -89,7 +89,7 @@ public class MemberService {
             member.setName("Name-" + i);
             member.setLastName("Last Name-" + i);
             member.setEmail("Email-" + i);
-            member.setPersonalCode(1 + i);
+            member.setPersonalCode("Asm. kodas" + i);
             member.setChessCareerStartDate(LocalDate.now());
             this.memberRepository.saveAndFlush(member);
         }
@@ -100,7 +100,7 @@ public class MemberService {
     }
 
     public void printMembersByName(String name) {
-        this.memberRepository.saveAndFlush(new Member(1L, "Marija", "Morkunaite", "marijamo@gmail.com", 496030159,
+        this.memberRepository.saveAndFlush(new Member(1L, "Marija", "Morkunaite", "marijamo@gmail.com", "Asm. kodas: 496030159",
                 LocalDate.now()));
 
         System.out.println("Member found by name: " + this.memberRepository.countByName(name));

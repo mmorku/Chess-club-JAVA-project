@@ -13,6 +13,6 @@ public class DeleteMemberDTO {
     private String name;
     private String lastName;
     private String email;
-    private Integer personalCode;
+    private String personalCode;
     private LocalDate chessCareerStartDate;
 }

@@ -21,7 +21,7 @@ public class Member {
 
     private String email;
 
-    private Integer personalCode;
+    private String personalCode;
 
     private LocalDate chessCareerStartDate;
 }

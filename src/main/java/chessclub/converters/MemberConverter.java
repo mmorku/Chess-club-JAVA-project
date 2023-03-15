@@ -41,9 +41,8 @@ public abstract class MemberConverter {
             memberDTO.setName(member.getName());
             memberDTO.setLastName(member.getLastName());
             memberDTO.setEmail(member.getEmail());
-            memberDTO.setSex(memberDTO.getSex());
-            memberDTO.setAge(memberDTO.getAge());
-            memberDTO.setExperience(memberDTO.getExperience());
+            memberDTO.setPersonalCode(member.getPersonalCode());
+            memberDTO.setChessCareerStartDate(member.getChessCareerStartDate());
         }
         return memberDTO;
     }
