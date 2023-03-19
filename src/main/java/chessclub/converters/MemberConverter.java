@@ -38,6 +38,7 @@ public abstract class MemberConverter {
         MemberDTO memberDTO = null;
         if (member != null){
             memberDTO = new MemberDTO();
+            memberDTO.setId(member.getId());
             memberDTO.setName(member.getName());
             memberDTO.setLastName(member.getLastName());
             memberDTO.setEmail(member.getEmail());

@@ -12,8 +12,11 @@ const loadMemberData = async () => {
 
   oldMemberData = await getMemberByID(memberId);
   editMemberForm.memberName.value = oldMemberData.name;
-  editMemberForm.memberLastname.value = oldMemberData.lastname;
-  editMemberForm.memmberEmail.value = oldMemberData.email;
+  editMemberForm.memberLastname.value = oldMemberData.lastName;
+  editMemberForm.memberEmail.value = oldMemberData.email;
+  editMemberForm.memberPersonalCode.value = oldMemberData.personalCode;
+  editMemberForm.memberChessCareerStartDate.value =
+    oldMemberData.chessCareerStartDate;
 };
 
 const handleFormSubmit = async () => {
@@ -25,9 +28,22 @@ const handleFormSubmit = async () => {
         oldMemberData.name !== editMemberForm.memberName.value
           ? editMemberForm.memberName.value
           : undefined,
-      lastname:
-        oldMemberData.lastname !== editMemberForm.memberLastname.value
+      lastName:
+        oldMemberData.lastName !== editMemberForm.memberLastname.value
           ? editMemberForm.memberLastname.value
+          : undefined,
+      email:
+        oldMemberData.email !== editMemberForm.memberEmail.value
+          ? editMemberForm.memberEmail.value
+          : undefined,
+      personalCode:
+        oldMemberData.personalCode !== editMemberForm.memberPersonalCode.value
+          ? editMemberForm.memberPersonalCode.value
+          : undefined,
+      chessCareerStartDate:
+        oldMemberData.chessCareerStartDate !==
+        editMemberForm.memberChessCareerStartDate.value
+          ? editMemberForm.memberChessCareerStartDate.value
           : undefined,
     };
 

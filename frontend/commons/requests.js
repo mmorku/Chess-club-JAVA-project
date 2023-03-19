@@ -1,7 +1,6 @@
 const API_BASE_URL = "http://localhost:8082";
 
 export const getMembers = async () => {
-  console.log("request starts");
   const response = await fetch(`${API_BASE_URL}/member`);
   const members = await response.json();
   return members;

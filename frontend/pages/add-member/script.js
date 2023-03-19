@@ -2,15 +2,18 @@ import { saveMember } from "../../commons/requests.js";
 
 const handleFormSubmit = async () => {
   const form = document.getElementById("addMemberForm").querySelector("form");
+  // console.log(form);
   form.addEventListener("submit", async (e) => {
+    console.log(form.memberLastname.value);
     e.preventDefault();
     const member = {
       name: form.memberName.value,
-      lastName: form.memberLastName.value,
+      lastName: form.memberLastname.value,
       email: form.memberEmail.value,
       personalCode: form.memberPersonalCode.value,
       chessCareerStartDate: form.memberChessCareerStartDate.value,
     };
+    console.log(member);
     await saveMember(member);
     window.location.reload();
   });
