@@ -84,27 +84,19 @@ public class MemberService {
     }
 
     private void addTestMembers() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 15; i++) {
             Member member = new Member();
             member.setName("Name-" + i);
             member.setLastName("Last Name-" + i);
             member.setEmail("Email-" + i);
-            member.setPersonalCode("Asm. kodas" + i);
-            member.setChessCareerStartDate(LocalDate.now());
+            member.setPersonalCode("4960322" + i);
+            member.setChessCareerStartDate(LocalDate.ofEpochDay(2010-01-01));
             this.memberRepository.saveAndFlush(member);
         }
     }
 
     public void loadTestData() {
         addTestMembers();
-    }
-
-    public void printMembersByName(String name) {
-        this.memberRepository.saveAndFlush(new Member(1L, "Marija", "Morkunaite", "marijamo@gmail.com", "Asm. kodas: 496030159",
-                LocalDate.now()));
-
-        System.out.println("Member found by name: " + this.memberRepository.countByName(name));
-        System.out.println(this.memberRepository.findFirstByName(name));
     }
 
     public void printAllMembers() {
@@ -118,10 +110,6 @@ public class MemberService {
             System.out.println(m);
         }
     }
-//
-//    public void deleteMemberByName(String name) {
-//        this.memberRepository.deleteAllByName(name);
-//    }
 
     public void deleteMemberById(Long id) {
         this.memberRepository.deleteById(id);

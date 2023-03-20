@@ -1,0 +1,305 @@
+{
+	"info": {
+		"_postman_id": "e88fb63f-e844-4800-9b1d-a278ac969d1b",
+		"name": "chess-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get all members",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "members returned",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURI}}/member",
+							"host": [
+								"{{baseURI}}"
+							],
+							"path": [
+								"member"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 12 Mar 2023 21:25:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": null,\n        \"name\": \"Name-0\",\n        \"lastName\": \"Last Name-0\",\n        \"email\": \"Email-0\",\n        \"sex\": null,\n        \"experience\": null\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-1\",\n        \"lastName\": \"Last Name-1\",\n        \"email\": \"Email-1\",\n        \"sex\": null,\n        \"experience\": null\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-2\",\n        \"lastName\": \"Last Name-2\",\n        \"email\": \"Email-2\",\n        \"sex\": null,\n        \"experience\": null\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-3\",\n        \"lastName\": \"Last Name-3\",\n        \"email\": \"Email-3\",\n        \"sex\": null,\n        \"experience\": null\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-4\",\n        \"lastName\": \"Last Name-4\",\n        \"email\": \"Email-4\",\n        \"sex\": null,\n        \"experience\": null\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-5\",\n        \"lastName\": \"Last Name-5\",\n        \"email\": \"Email-5\",\n        \"sex\": null,\n        \"experience\": null\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-6\",\n        \"lastName\": \"Last Name-6\",\n        \"email\": \"Email-6\",\n        \"sex\": null,\n        \"experience\": null\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-7\",\n        \"lastName\": \"Last Name-7\",\n        \"email\": \"Email-7\",\n        \"sex\": null,\n        \"experience\": null\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-8\",\n        \"lastName\": \"Last Name-8\",\n        \"email\": \"Email-8\",\n        \"sex\": null,\n        \"experience\": null\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-9\",\n        \"lastName\": \"Last Name-9\",\n        \"email\": \"Email-9\",\n        \"sex\": null,\n        \"experience\": null\n    }\n]"
+				},
+				{
+					"name": "members returned",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURI}}/member",
+							"host": [
+								"{{baseURI}}"
+							],
+							"path": [
+								"member"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 16:43:25 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": null,\n        \"name\": \"Name-0\",\n        \"lastName\": \"Last Name-0\",\n        \"email\": \"Email-0\",\n        \"personalCode\": \"Asm. kodas0\",\n        \"chessCareerStartDate\": \"2023-03-19\"\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-1\",\n        \"lastName\": \"Last Name-1\",\n        \"email\": \"Email-1\",\n        \"personalCode\": \"Asm. kodas1\",\n        \"chessCareerStartDate\": \"2023-03-19\"\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-2\",\n        \"lastName\": \"Last Name-2\",\n        \"email\": \"Email-2\",\n        \"personalCode\": \"Asm. kodas2\",\n        \"chessCareerStartDate\": \"2023-03-19\"\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-3\",\n        \"lastName\": \"Last Name-3\",\n        \"email\": \"Email-3\",\n        \"personalCode\": \"Asm. kodas3\",\n        \"chessCareerStartDate\": \"2023-03-19\"\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-4\",\n        \"lastName\": \"Last Name-4\",\n        \"email\": \"Email-4\",\n        \"personalCode\": \"Asm. kodas4\",\n        \"chessCareerStartDate\": \"2023-03-19\"\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-5\",\n        \"lastName\": \"Last Name-5\",\n        \"email\": \"Email-5\",\n        \"personalCode\": \"Asm. kodas5\",\n        \"chessCareerStartDate\": \"2023-03-19\"\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-6\",\n        \"lastName\": \"Last Name-6\",\n        \"email\": \"Email-6\",\n        \"personalCode\": \"Asm. kodas6\",\n        \"chessCareerStartDate\": \"2023-03-19\"\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-7\",\n        \"lastName\": \"Last Name-7\",\n        \"email\": \"Email-7\",\n        \"personalCode\": \"Asm. kodas7\",\n        \"chessCareerStartDate\": \"2023-03-19\"\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-8\",\n        \"lastName\": \"Last Name-8\",\n        \"email\": \"Email-8\",\n        \"personalCode\": \"Asm. kodas8\",\n        \"chessCareerStartDate\": \"2023-03-19\"\n    },\n    {\n        \"id\": null,\n        \"name\": \"Name-9\",\n        \"lastName\": \"Last Name-9\",\n        \"email\": \"Email-9\",\n        \"personalCode\": \"Asm. kodas9\",\n        \"chessCareerStartDate\": \"2023-03-19\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "add new member",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Jonas\",\r\n    \"lastName\": \"Jonaitis\",\r\n    \"email\": \"mmo@gmail.com\",\r\n    \"personalCode\": 12345678,\r\n    \"chessCareerStartDate\": \"2022-01-01\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURI}}/member",
+					"host": [
+						"{{baseURI}}"
+					],
+					"path": [
+						"member"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "member added succesfully",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Jonas\",\r\n    \"lastName\": \"Jonaitis\",\r\n    \"email\": \"mmo@gmail.com\",\r\n    \"personalCode\": 12345678,\r\n    \"chessCareerStartDate\": \"2022-01-01\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURI}}/member",
+							"host": [
+								"{{baseURI}}"
+							],
+							"path": [
+								"member"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 15 Mar 2023 19:50:08 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "delete by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURI}}/member/:memberId",
+					"host": [
+						"{{baseURI}}"
+					],
+					"path": [
+						"member",
+						":memberId"
+					],
+					"variable": [
+						{
+							"key": "memberId",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "member deleted",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURI}}/member/:memberId",
+							"host": [
+								"{{baseURI}}"
+							],
+							"path": [
+								"member",
+								":memberId"
+							],
+							"variable": [
+								{
+									"key": "memberId",
+									"value": "1",
+									"description": "ID of the Member"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 19 Mar 2023 16:46:11 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURI",
+			"value": "http://localhost:8082"
+		}
+	]
+}
